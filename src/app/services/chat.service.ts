@@ -165,7 +165,7 @@ saveImageMessage = async(file: any) => {
     // 4 - Update the chat message placeholder with the image's URL.
     messageRef ?
     await updateDoc(messageRef, {
-      imageUrl: console.log(publicImageUrl),
+      imageUrl: publicImageUrl,
       storageUri: fileSnapshot.metadata.fullPath
     }): null;
   } catch (error) {
